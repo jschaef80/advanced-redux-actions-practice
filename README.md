@@ -22,85 +22,85 @@ View this video to see how the app should work once you are done coding. [Video]
     * `export default combineReducers({ ... })`
 
 ### Make these reducers
-  * currentCount
+  * currentCount √√√
     * if "INCREASE_COUNTER" or "DECREASE_COUNTER", it should return the current count plus one or minus one, depending on the action
 
-  * specialText
+  * specialText √√√
     * if "SET_SPECIAL_TEXT", it should return the action value (`action.value`)
 
-  * currentCity
+  * currentCity √√√
     * if "SET_CURRENT_CITY", it should return the action value
 
-  * users
+  * users √√√
     * if "REMOVE_USER" or "ADD_USER", it should return `state.slice(1)` to remove the first user or `[...state,action.value]` to add a user
   
-  * currentTemp
+  * currentTemp √√√
     * if "SET_TEMP", it should return action value
 
-  * isLoading
+  * isLoading √√√
     * if "SET_IS_LOADING", it should return action value
 
-  * videoURL
+  * videoURL √√√
     * if "SET_VIDEO_URL", it should return action value
 
-  * searchText
+  * searchText √√√
     * if "SET_SEARCH_TEXT", it should return action value
 
-  * currentUserSort
+  * currentUserSort √√√
     * if "SET_CURRENT_USER_SORT", it should return action value
 
-  * videoScale
+  * videoScale √√√
     * if "SET_VIDEO_SCALE", it should return action value
 
 ### Create Actions in actions/index.js -- A template has been provided
   * The actions are written below in sudo-code. Please write them the way the examples are written in actions/index.js
 
   * increaseCounter()
-    * type = "INCREASE_COUNTER"
+    * type = "INCREASE_COUNTER" √√√
 
   * decreaseCounter()
-    * type = "DECREASE_COUNTER"
+    * type = "DECREASE_COUNTER" √√√
 
   * setSpecialText(text)
     * type = "SET_SPECIAL_TEXT"
-    * value = text
+    * value = text √√√
 
   * removeUser()
-    * type = "REMOVE_USER"
+    * type = "REMOVE_USER" √√√
 
   * addUser(user)
     * type = "ADD_USER"
-    * value = user
+    * value = user √√√
 
   * setSearchText(text)
     * type = "SET_SEARCH_TEXT"
-    * value = text
+    * value = text √√√
 
   * setIsLoading(isLoading)
     * type = "SET_IS_LOADING"
-    * value = isLoading
+    * value = isLoading √√√
 
   * setTemp(temp)
     * type = "SET_TEMP"
-    * value = temp
+    * value = temp √√√
 
   * setCurrentCity(city)
     * type = "SET_CURRENT_CITY"
-    * value = city
+    * value = city √√√
 
   * setVideoURL(URL)
     * type = "SET_VIDEO_URL"
-    * value = URL
+    * value = URL √√√
 
   * setCurrentUserSort(sort)
     * type = "SET_CURRENT_USER_SORT"
-    * value = sort
+    * value = sort √√√
 
   * setVideoScale(scale)
     * type = "SET_VIDEO_SCALE"
-    * value = scale
+    * value = scale √√√
 
-### Create Store -- This has been done for you
+### Create Store -- This has been done for you √√√
   * Create a store.js file
   * Import state from state.js
   * import `{ createStore }` from redux
@@ -108,7 +108,7 @@ View this video to see how the app should work once you are done coding. [Video]
   * create the store
   * export the store
 
-### Provide store to components -- You may copy from your last assignment
+### Provide store to components -- You may copy from your last assignment √√√
   * In index.js
   * Import `{ Provider }` from `react-redux`
   * Import store from store.js
@@ -123,6 +123,24 @@ View this video to see how the app should work once you are done coding. [Video]
   * This is where mapStateToProps and mapDispatchToProps should be
   * This is where you should do the connecting
   * Export the container
+
+  ChangeTemperature √√√
+  CityDropDown √√√
+  Counter √√√
+  CounterButton
+  CurrentCity
+  Modal
+  ScaleVideo
+  SearchTextBox
+  ShowModal
+  SortUsers
+  SpecialText
+  SpecialTextBox
+  Thermostat
+  UserButtons
+  Users
+  VideoPlayer
+  VideoTextBox
 
 ### Create these Containers that care about what the data is -- mapStateToProps
   * Import `{ connect }` from `react-redux` into all containers
