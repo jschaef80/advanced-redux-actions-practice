@@ -1,4 +1,4 @@
-// import combineReducers here
+import { combineReducers } from 'redux'
 
 const currentCount = (state = 0, action) => {
   switch (action.type) {
@@ -94,4 +94,16 @@ const videoScale = (state = 1, action) => {
       return state
   }
 }
-// combine reducers (and export) here
+
+export default combineReducers({
+  currentCount,
+  specialText,
+  users,
+  currentCity,
+  currentTemp,
+  isLoading,
+  videoURL,
+  searchText,
+  currentUserSort,
+  videoScale
+});

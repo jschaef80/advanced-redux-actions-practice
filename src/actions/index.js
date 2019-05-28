@@ -54,7 +54,7 @@ export const setTemp = (temp) => {
 export const setCurrentCity = (city) => {
   return {
     type: "SET_CURRENT_CITY",
-    value = city
+    value: city
   }
 }
 
@@ -75,7 +75,7 @@ export const setCurrentUserSort = (sort) => {
 export const setVideoScale = (scale) => {
   return {
     type: "SET_VIDEO_SCALE",
-    value = scale
+    value: scale
   }
 }
 
