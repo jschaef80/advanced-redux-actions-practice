@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import {setTemp} from "../actions";
-import setTemp from "../components/settemp";
+import ChangeTemperature from "../components/ChangeTemperature";
 
 const mapDispatchToProps = (dispatch) => {
   return {

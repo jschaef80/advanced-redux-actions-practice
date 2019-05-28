@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import {increaseCounter, decreaseCounter} from "../actions";
-import SpecialTextBox from "../components/SpecialTextBox";
+import Counterbutton from '../components/CounterButton';
 
 const mapDispatchToProps = (dispatch) => {
   return {
@@ -9,4 +9,4 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default connect(null, mapDispatchToProps)(SpecialTextBox);
+export default connect(null, mapDispatchToProps)(Counterbutton);

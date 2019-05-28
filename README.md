@@ -124,24 +124,6 @@ View this video to see how the app should work once you are done coding. [Video]
   * This is where you should do the connecting
   * Export the container
 
-  ChangeTemperature √√√
-  CityDropDown √√√
-  Counter √√√
-  CounterButton
-  CurrentCity
-  Modal
-  ScaleVideo
-  SearchTextBox
-  ShowModal
-  SortUsers
-  SpecialText
-  SpecialTextBox
-  Thermostat
-  UserButtons
-  Users
-  VideoPlayer
-  VideoTextBox
-
 ### Create these Containers that care about what the data is -- mapStateToProps
   * Import `{ connect }` from `react-redux` into all containers
   * Import the appropriate component into the container
@@ -176,7 +158,7 @@ View this video to see how the app should work once you are done coding. [Video]
   * Import `{ connect }` from `react-redux` into all containers
   * Import the appropriate component into the container
   * Create `mapDispatchToProps` function 
-  * Call the `connect` function and export: `export default connect(null, mapDispatchToProps)(<COMPONENT>)`
+  * Call the `connect` function and export: `export default connect(null, mapDispatchToProps)(<COMPONENT>)
 
   * SpecialTextBoxContainer.js
     * import `setSpecialText` action
